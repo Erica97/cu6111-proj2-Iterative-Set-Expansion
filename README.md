@@ -23,6 +23,15 @@ pip3 install -U spacy
 python3 -m spacy download en_core_web_lg
 pip3 install google-api-python-client
 ```
+
+We have implemented the scripts for downloading and running the pre-trained SpanBERT classifier for the purpose of this project:
+```bash
+git clone https://github.com/gkaramanolakis/SpanBERT
+cd SpanBERT
+pip3 install -r requirements.txt
+bash download_finetuned.sh
+```
+
 ### Run
 If query is separated by space, please use double quotes to wrap it.
 ```bash
